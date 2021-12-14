@@ -145,6 +145,9 @@ margin-left: 50px;
 }
 
 .header-item:hover svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .header-contacts .header-mail,
@@ -170,14 +173,23 @@ margin-left: 50px;
 /*Псевдокласи header*/
 .header-list .header-link:hover,
 .header-list .header-link:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 .header-contacts .header-mail:hover,
 .header-contacts .header-mail:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 .header-contacts .header-phone:hover,
 .header-contacts .header-phone:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 /*підсвічування активної сторінки*/
@@ -411,6 +423,9 @@ margin-left: 50px;
 }
 .team-social-link:hover,
 .team-social-link:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-text-color);
 }
 .instagram {
@@ -425,6 +440,9 @@ margin-left: 50px;
 }
 .instagram:hover svg,
 .instagram:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .twitter {
@@ -439,6 +457,9 @@ margin-left: 50px;
 }
 .twitter:hover svg,
 .twitter:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .facebook {
@@ -453,6 +474,9 @@ margin-left: 50px;
 }
 .facebook:hover svg,
 .facebook:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .linkedin {
@@ -467,6 +491,9 @@ margin-left: 50px;
 }
 .linkedin:hover svg,
 .linkedin:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 
@@ -509,6 +536,9 @@ margin-left: 50px;
 }
 .clients-link:hover,
 .clients-link:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--accent-text-color);
 }
 .client1,
@@ -521,26 +551,44 @@ margin-left: 50px;
 }
 .client1:hover svg,
 .client1:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client2:hover svg,
 .client2:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client3:hover svg,
 .client3:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client4:hover svg,
 .client4:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client5:hover svg,
 .client5:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client6:hover svg,
 .client6:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 /*footer*/
@@ -595,15 +643,24 @@ margin-left: 50px;
 
 .contacts-list .contacts-address:hover,
 .contacts-list .contacts-address:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 .contacts-list .contacts-mail:hover,
 .contacts-list .contacts-mail:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 
 .contacts-list .contacts-phone:hover,
 .contacts-list .contacts-phone:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 .contacts-list > li {
@@ -643,6 +700,9 @@ margin-left: 50px;
 }
 .comming-social-link:hover,
 .comming-social-link:focus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-text-color);
 }
 .instagram1,
@@ -676,18 +736,30 @@ margin-left: 50px;
 }
 .linkedin1:hover svg,
 .linkedin1:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--background-color);
 }
 .linkedin1:hover svg,
 .linkedin1:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .linkedin1:hover svg,
 .linkedin1:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .linkedin1:hover svg,
 .linkedin1:focus svg {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .comming-list {
@@ -741,6 +813,9 @@ margin-left: 50px;
 /* shadow-middle */
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--accent-text-color);
 }
 
@@ -759,7 +834,10 @@ margin-left: 50px;
 
 .container-item:hover {
    /* background: var(--border-portfolio-cards);*/
-    box-sizing: border-box;
+   opacity: 1;
+   visibility: visible;
+   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .container-item .details {
