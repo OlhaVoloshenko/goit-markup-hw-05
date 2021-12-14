@@ -47,7 +47,18 @@
       <section class="main section">
         <div class="main-menu container">
           <h1 class="main-title">Ефективні рішення<br> для вашого бізнесу</h1>
-          <button type="button" class="button-primary">Замовити послугу</button>
+          
+          <button class="button-primary" data-modal-open>Замовити послугу</button>
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>
+              натисни на мене і заповни
+            </p>
+            <button  data-modal-close>Закрити</button>
+          </div>
+        </div>
+          <!--<button type="button" class="button-primary">Замовити послугу</button>-->
         </div>
         </section>
       <section class="feature section">
@@ -331,5 +342,6 @@
       </div>
     </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
