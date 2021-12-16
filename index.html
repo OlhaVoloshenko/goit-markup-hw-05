@@ -47,18 +47,13 @@
       <section class="main section">
         <div class="main-menu container">
           <h1 class="main-title">Ефективні рішення<br> для вашого бізнесу</h1>
-          
-          <button class="button-primary" data-modal-open>Замовити послугу</button>
-
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <p>
-              натисни на мене і заповни
-            </p>
-            <button  data-modal-close>Закрити<span>x</span></button>
-          </div>
-        </div>
-          <!--<button type="button" class="button-primary">Замовити послугу</button>-->
+            <button class="button-primary" data-open-modal>Замовити послугу</button>
+              <div class="backdrop is-hidden" data-backdrop>
+                <div class="modal">
+                  <p></p>
+                  <button data-close-modal>Закрити</button>
+                </div>
+               </div>
         </div>
         </section>
       <section class="feature section">
@@ -88,9 +83,15 @@
         <div class="container">
         <h2 class="section-title">Чим ми займаємось</h2>
             <ul class="directions-list list">
-              <li class="directions-item"><img class="directions-picture" src="images/box-1.jpg" alt="Розробляємо" width="370"></li>
-              <li class="directions-item"><img class="directions-picture" src="images/box-2.jpg" alt="Тестуємо" width="370"></li>
-              <li class="directions-item"><img class="directions-picture" src="images/box-3.jpg" alt="Практикуємо" width="370"></li>
+              <li class="directions-item">
+                <img class="directions-picture" src="images/box-1.jpg" alt="Розробляємо" width="370">
+                <p class="directions-text">Десктопні застосунки</p></li>
+              <li class="directions-item">
+                <img class="directions-picture" src="images/box-2.jpg" alt="Тестуємо" width="370">
+                <p class="directions-text">Мобільні додатки</p></li>
+              <li class="directions-item">
+                <img class="directions-picture" src="images/box-3.jpg" alt="Практикуємо" width="370">
+              <p class="directions-text">Дизайнерські рішення</p></li>
             </ul>
           </div>
       </section>
@@ -342,6 +343,13 @@
       </div>
     </div>
     </footer>
+    <!--<script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+      </script>-->
     <script src="./js/modal.js"></script>
   </body>
 </html>
