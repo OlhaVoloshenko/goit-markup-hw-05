@@ -10,16 +10,7 @@
     --border-portfolio-header: #ECECEC;
     --color-icons-items: #AFB1B8;
 }
-/*html {
-    box-sizing: border-box;
-}
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-*/
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
@@ -105,7 +96,11 @@ body {
 .header-list .header-box + .header-box {
     margin-left: 50px;
 }
-
+.header-link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header-list .header-link {
     font-weight: 500;
     font-size: 14px;
@@ -135,13 +130,13 @@ margin-left: 50px;
 }
 .smartphone,
 .envelope {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--page-text-color);
 }
 
 .header-item:hover svg {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .header-contacts .header-mail,
@@ -156,6 +151,10 @@ margin-left: 50px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--page-text-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail {
     min-width: 135px;
@@ -167,17 +166,14 @@ margin-left: 50px;
 /*Псевдокласи header*/
 .header-list .header-link:hover,
 .header-list .header-link:focus {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 .header-contacts .header-mail:hover,
 .header-contacts .header-mail:focus {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 .header-contacts .header-phone:hover,
 .header-contacts .header-phone:focus {
-    transition: color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 /*підсвічування активної сторінки*/
@@ -279,7 +275,6 @@ margin-left: 50px;
 
 .close-icon {
     position: absolute;
-    
 }
 .close {
     position: absolute;
@@ -461,15 +456,18 @@ margin-left: 50px;
     background-color: var(--background-color);
 }
 .team-social-link {
-        display: block;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        margin-right: 10px;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-link:hover,
 .team-social-link:focus {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-text-color);
 }
 .instagram {
@@ -484,7 +482,7 @@ margin-left: 50px;
 }
 .instagram:hover svg,
 .instagram:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     fill: var(--background-color);
 }
 .twitter {
@@ -499,7 +497,6 @@ margin-left: 50px;
 }
 .twitter:hover svg,
 .twitter:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .facebook {
@@ -514,7 +511,6 @@ margin-left: 50px;
 }
 .facebook:hover svg,
 .facebook:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .linkedin {
@@ -529,7 +525,6 @@ margin-left: 50px;
 }
 .linkedin:hover svg,
 .linkedin:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 
@@ -569,10 +564,13 @@ margin-left: 50px;
     border-style: solid;
     border-color: var(--color-icons-items);
     border-radius: 4px;
+
+    transition-property: border-color, fill;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--accent-text-color);
 }
 .client1,
@@ -585,32 +583,26 @@ margin-left: 50px;
 }
 .client1:hover svg,
 .client1:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client2:hover svg,
 .client2:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client3:hover svg,
 .client3:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client4:hover svg,
 .client4:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client5:hover svg,
 .client5:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 .client6:hover svg,
 .client6:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--accent-text-color);
 }
 /*footer*/
@@ -657,26 +649,30 @@ margin-left: 50px;
 }
 .contacts-mail,
 .contacts-phone {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     color: rgba(255, 255, 255, 0.6);
 }
 .contacts-address {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     color: var(--background-color);
 }
-
 .contacts-list .contacts-address:hover,
 .contacts-list .contacts-address:focus {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 .contacts-list .contacts-mail:hover,
 .contacts-list .contacts-mail:focus {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 
 .contacts-list .contacts-phone:hover,
 .contacts-list .contacts-phone:focus {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-text-color);
 }
 .contacts-list > li {
@@ -707,16 +703,19 @@ margin-left: 50px;
     margin-right: 10px;
 }*/
 .comming-social-link {
-        display: block;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        margin-right: 10px;
-        background-color: rgba(255, 255, 255, 0.1);
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comming-social-link:hover,
 .comming-social-link:focus {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-text-color);
 }
 .instagram1,
@@ -750,22 +749,18 @@ margin-left: 50px;
 }
 .linkedin1:hover svg,
 .linkedin1:focus svg {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--background-color);
 }
 .linkedin1:hover svg,
 .linkedin1:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .linkedin1:hover svg,
 .linkedin1:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .linkedin1:hover svg,
 .linkedin1:focus svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
 }
 .comming-list {
